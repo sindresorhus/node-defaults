@@ -1,0 +1,26 @@
+{
+  "name": "defaults",
+  "version": "1.0.0",
+  "description": "merge single level defaults over a config object",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tmpvar/defaults.git"
+  },
+  "keywords": [
+    "config",
+    "defaults"
+  ],
+  "author": "Elijah Insua <tmpvar@gmail.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "clone": "~0.1.5"
+  },
+  "devDependencies" :{
+    "tap": "~0.4.0"
+  }
+}
