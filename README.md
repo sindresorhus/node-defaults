@@ -38,3 +38,6 @@ this module exports a function that takes 2 arguments: `options` and `defaults`.
 
 Sidecases: if called with a falsy `options` value, options will be initialized to a new object before being merged onto.
 
+## license
+
+[MIT](README)
