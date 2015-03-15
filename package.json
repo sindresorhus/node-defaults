@@ -1,6 +1,6 @@
 {
   "name": "defaults",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "merge single level defaults over a config object",
   "main": "index.js",
   "scripts": {
