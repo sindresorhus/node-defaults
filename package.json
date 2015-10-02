@@ -21,6 +21,6 @@
     "clone": "^1.0.2"
   },
   "devDependencies": {
-    "tap": "^0.7.1"
+    "tap": "^2.0.0"
   }
 }
