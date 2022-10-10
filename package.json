@@ -1,16 +1,25 @@
 {
 	"name": "defaults",
 	"version": "1.0.4",
-	"description": "merge single level defaults over a config object",
-	"main": "index.js",
+	"description": "Easily handle defaults for your options",
+	"license": "MIT",
+	"repository": "sindresorhus/defaults",
 	"funding": "https://github.com/sponsors/sindresorhus",
+	"type": "module",
+	"exports": {
+		"types": "./index.d.ts",
+		"default": "./index.js"
+	},
+	"engines": {
+		"node": ">=16"
+	},
 	"scripts": {
-		"test": "node test.js"
+		"test": "xo && ava && tsd"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/sindresorhus/node-defaults.git"
-	},
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
 	"keywords": [
 		"config",
 		"defaults",
@@ -21,13 +30,9 @@
 		"properties",
 		"deep"
 	],
-	"author": "Elijah Insua <tmpvar@gmail.com>",
-	"license": "MIT",
-	"readmeFilename": "README.md",
-	"dependencies": {
-		"clone": "^1.0.2"
-	},
 	"devDependencies": {
-		"tap": "^2.0.0"
+		"ava": "^5.2.0",
+		"tsd": "^0.28.1",
+		"xo": "^0.54.0"
 	}
 }
