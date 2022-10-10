@@ -1,6 +1,6 @@
 {
 	"name": "defaults",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "merge single level defaults over a config object",
 	"main": "index.js",
 	"funding": "https://github.com/sponsors/sindresorhus",
