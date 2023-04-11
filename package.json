@@ -3,7 +3,7 @@
 	"version": "2.0.0",
 	"description": "Easily handle defaults for your options",
 	"license": "MIT",
-	"repository": "sindresorhus/defaults",
+	"repository": "sindresorhus/node-defaults",
 	"funding": "https://github.com/sponsors/sindresorhus",
 	"type": "module",
 	"exports": {
