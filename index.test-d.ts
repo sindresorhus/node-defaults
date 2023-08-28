@@ -45,3 +45,22 @@ import defaults from './index.js';
 	console.log(a.b); // Expect output to be 1
 	console.log(a.c); // Expect output to be 2
 }
+
+// Test that types get overriden by default when undefined
+{
+	type T = Partial<{
+		timeout: number;
+	}>;
+
+	const options: T = {};
+	const defaultOptions: Required<T> = {timeout: 100};
+	const result = defaults(options, defaultOptions);
+
+	// Expect result to be Required<T>
+	type Result = typeof result;
+	type Expected = Required<T>;
+	const _result: Expected = result;
+
+	// Safe to use now
+	console.log(result.timeout > 0);
+}
