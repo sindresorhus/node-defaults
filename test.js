@@ -50,3 +50,31 @@ test('ensure correct handling of null and undefined values', t => {
 	const result = defaults(options, defaultOptions);
 	t.deepEqual(result, {a: null, b: {d: 2}});
 });
+
+test('ensure the given `defaultOptions` is not modified', t => {
+	const fixture = {
+		a: {
+			b: 'c',
+		},
+	};
+
+	const defaultOptions = structuredClone(fixture);
+
+	defaults({a: {b: 'd'}}, defaultOptions);
+
+	t.deepEqual(defaultOptions, fixture);
+});
+
+test('ensure the given `options` is not modified', t => {
+	const fixture = {
+		a: {
+			b: 'c',
+		},
+	};
+
+	const options = structuredClone(fixture);
+
+	defaults(options, {a: {b: 'd'}});
+
+	t.deepEqual(options, fixture);
+});

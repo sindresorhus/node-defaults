@@ -47,5 +47,5 @@ const merge = (destination, source) => {
 };
 
 export default function defaults(options = {}, defaultOptions = {}) {
-	return merge({...defaultOptions}, {...options});
+	return merge(structuredClone(defaultOptions), structuredClone(options));
 }

@@ -36,7 +36,9 @@ calculate({timeout: {before: 200}});
 
 ### defaults(options, defaultOptions?)
 
-Deeply merges the given options with the specified defaults.
+Deeply merges the given options with the specified defaults and returns a new object.
+
+The given parameters are deep-cloned and never mutated.
 
 #### options
 
